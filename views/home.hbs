@@ -1,0 +1,27 @@
+<h3>Student Management System</h3>
+<p ><a href="/adduser"  class="addbtn">Add User</a></p>
+<table>
+    <thead>
+        <tr>
+            <td>no</td>
+            <td>name</td>
+            <td>age</td>
+            <td>city</td>
+            <td>edit</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+          {{#each results}}
+        <tr>
+            <td>{{this.ID}}</td>
+            <td>{{this.Name}}</td>
+            <td>{{this.Age}}</td>
+            <td>{{this.City}}</td>
+            <td><a href="/edituser/{{this.ID}}" class="edit">Edit</a></td>
+            <td><a href="/deleteuser/{{this.ID}}" class="delete">Delete</a></td>
+        </tr>
+        {{/each}}
+</tbody>
+
+</table>

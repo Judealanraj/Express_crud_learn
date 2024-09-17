@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  background: #8ade97;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  height: 1000px;
+  width: 450px;
+  background: white;
+  margin: 0 auto;
+  font-size: 10px;
+}
+h3{
+  font-size: 13px;
+  color: tomato;
+  padding: 10px;
+  border-bottom: 1px solid #6b6e6b;
+}
+table{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border-collapse: collapse;
+}
+td{
+  border: 1px solid rgb(23, 21, 21);
+}
+table thead td{
+  padding: 5px;
+  background-color: rgb(94, 90, 192);
+  color: white;
+}
+table tbody td{
+  padding: 5px;
+  text-align: center;
+}
+table tbody tr:nth-child(even){
+  background: #eae4e4;
+}
+.edit, .delete ,.addbtn{
+  text-decoration: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background: #b67b7b;
+  text-align: center;
+}
+.delete{
+  background-color: #0de32d;
+}
+p{
+  text-align: right;
+  padding-top: 5px;
+}
+.addbtn{
+  background-color: #123bc1;
+  color: white;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.viewall {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.viewall:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.viewall:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+

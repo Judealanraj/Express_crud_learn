@@ -1,0 +1,22 @@
+{{#each results}}
+<div class="form-container"></div>
+        <h2>Edit User</h2>
+        
+        <form action="/edituser/{{this.ID}}" method="POST">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required value="{{this.Name}}">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required value="{{this.City}}">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required value="{{this.Age}}">
+
+            <button type="submit">save changes</button>
+           <p class="viewall"> <a href="/" >view all</a></p>
+           
+        </form>
+        
+    </div>
+   {{/each}} 
